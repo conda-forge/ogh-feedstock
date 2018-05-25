@@ -1,4 +1,4 @@
-{% set version = "0.1.6a0" %}
+{% set version = "0.1.8a0" %}
 
 package:
   name: ogh
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/ogh/ogh-{{ version }}.tar.gz
-  sha256: 4fa735bc1a731ce176627c7180f4cf896a355c394bc3e74a48cd44f420bdf1d6
+  sha256: 56f2404b2249316ebb9ea0fa716125ece6518f476bde0342f03d3938343c3fbe
 
 build:
   number: 0
@@ -26,6 +26,8 @@ requirements:
     - beautifulsoup4
     - basemap
     - python-wget
+    - seaborn
+    - basemap-data-hires
 
 test:
   imports:
