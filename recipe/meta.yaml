@@ -27,7 +27,7 @@ requirements:
     - basemap
     - python-wget
     - seaborn
-    - basemap-data-hires
+    # - basemap-data-hires Note: This might be a problem?
     - setuptools
     - twine
     - wheel
