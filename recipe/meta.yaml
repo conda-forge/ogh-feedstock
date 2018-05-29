@@ -17,6 +17,8 @@ requirements:
   build:
     - python
     - pip
+    - wheel >=0.31.0
+    - twine >=1.11.0
   run:
     - python
     - pandas
@@ -28,9 +30,6 @@ requirements:
     - python-wget
     - seaborn
     # - basemap-data-hires Note: This might be a problem?
-    - setuptools
-    - twine
-    - wheel
 
 test:
   imports:
