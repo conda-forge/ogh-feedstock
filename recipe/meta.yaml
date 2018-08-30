@@ -30,6 +30,7 @@ requirements:
     - basemap
     - python-wget
     - landlab
+    - seaborn
 
 test:
   imports:
