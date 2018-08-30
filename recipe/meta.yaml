@@ -1,4 +1,4 @@
-{% set version = "0.1.6a0" %}
+{% set version = "0.1.11" %}
 
 package:
   name: ogh
@@ -6,17 +6,20 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/ogh/ogh-{{ version }}.tar.gz
-  sha256: 4fa735bc1a731ce176627c7180f4cf896a355c394bc3e74a48cd44f420bdf1d6
+  sha256: bd71a25fc32a8d28f44b72e422b7db532de4281961ddbdffd631f9423ef3854f
 
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
-  build:
+  host:
     - python
     - pip
+    - setuptools >=38.6.0 
+    - wheel >=0.31.0 
+    - twine >=1.11.0
   run:
     - python
     - pandas
@@ -26,6 +29,8 @@ requirements:
     - beautifulsoup4
     - basemap
     - python-wget
+    - landlab
+    - seaborn
 
 test:
   imports:
@@ -42,3 +47,4 @@ extra:
   recipe-maintainers:
     - lsetiawan
     - jphuong
+    - ocefpaf
