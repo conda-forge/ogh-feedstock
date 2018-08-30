@@ -17,6 +17,9 @@ requirements:
   build:
     - python
     - pip
+    - setuptools>=38.6.0 
+    - wheel>=0.31.0 
+    - twine>=1.11.0
   run:
     - python
     - pandas
@@ -27,9 +30,6 @@ requirements:
     - basemap
     - python-wget
     - landlab
-    - setuptools>=38.6.0 
-    - wheel>=0.31.0 
-    - twine>=1.11.0
 
 test:
   imports:
