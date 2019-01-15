@@ -31,7 +31,7 @@ requirements:
     - python-wget
     - landlab
     - seaborn
-    - matplotlib==2.2.3
+    - matplotlib
     - xarray
 
 test:
