@@ -1,4 +1,4 @@
-{% set version = "0.2.0" %}
+{% set version = "0.2.1" %}
 
 package:
   name: ogh
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/o/ogh/ogh-{{ version }}.tar.gz
-  sha256: ac94deeccbf7cee3b1d8a3fbc6ca3bb6d431ab1826cd807b379adec48d0b66ef
+  sha256: 7f39c0416f3733b9a4a1dc90da35ad757726aa65f5c05d1182c8378882806a26
 
 build:
   number: 0
@@ -31,7 +31,7 @@ requirements:
     - python-wget
     - landlab
     - seaborn
-    - matplotlib==2.2.3
+    - matplotlib
     - xarray
 
 test:
