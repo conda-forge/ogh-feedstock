@@ -9,7 +9,7 @@ source:
   sha256: 7f39c0416f3733b9a4a1dc90da35ad757726aa65f5c05d1182c8378882806a26
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
@@ -31,7 +31,7 @@ requirements:
     - python-wget
     - landlab
     - seaborn
-    - matplotlib
+    - matplotlib-base
     - xarray
 
 test:
